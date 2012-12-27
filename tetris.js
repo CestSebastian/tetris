@@ -44,7 +44,7 @@ function Tetris(gameContainer, scoreContainer, nextPieceContainer) {
     }
     
     var _initKeyListener = function() {
-        document.addEventListener('keyup', _keyListener);
+        document.addEventListener('keydown', _keyListener);
     }
     
     function frame() {
@@ -109,6 +109,6 @@ function Tetris(gameContainer, scoreContainer, nextPieceContainer) {
         if (intervalId)
             clearInterval(intervalId);
         
-        document.removeEventListener('keyup', _keyListener);
+        document.removeEventListener('keydown', _keyListener);
     }
 }
