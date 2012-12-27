@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tetris</title>
+        <script type="text/javascript" src="rss.js"></script>
+        <script type="text/javascript" src="colorMap.js"></script>
+        <script type="text/javascript" src="form.js"></script>
+        <script type="text/javascript" src="matrix.js"></script>
+        <script type="text/javascript" src="tetris.js"></script>
+        <script type="text/javascript" src="main.js" defer="defer"></script>
+        <style>
+            .fleft { float: left; }
+            #game { margin: 10px;border: 1px solid #ccc; }
+            #game canvas { float: left; }
+            
+            
+            #score, #nextPiece { display: none; }
+            #score > p { font-size: 20px; font-family: sans-serif; text-align: center; width: 150px; }
+        </style>
+    </head>
+    <body>
+        <div id="controls">
+            <button id="start">New Game</button>
+            <button id="pause" disabled="disabled">Pause (Space)</button>
+        </div>
+        
+        <div class="fleft">
+            <div id="game" class="fleft"></div>
+        </div>
+        
+        <div class="fleft">
+            <div id="score">
+                <h3>Score</h3>
+                <p></p>
+            </div>
+            <div id="nextPiece">
+                <h3>Next piece</h3>
+            </div>
+        </div>
+    </body>
+</html>
