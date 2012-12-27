@@ -1,3 +1,5 @@
+'use strict';
+
 var Rss = {};
 
 Rss.Random = {};
@@ -25,10 +27,6 @@ Rss.Canvas = function(appendTo, canvasId) {
     
     this.getContext2d = function() {
         return _canvas.getContext('2d');
-    }
-    
-    this.makeGrid = function(x, y, squareSize) {
-        
     }
 }
 

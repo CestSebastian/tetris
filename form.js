@@ -1,3 +1,5 @@
+'use strict';
+
 function Form(x, y, grid, formIndex, variationIndex) {
     var forms = [
         // forms
@@ -48,11 +50,11 @@ function Form(x, y, grid, formIndex, variationIndex) {
     this.y = y;
     this.grid = grid;
 
-    this.formIndex = (formIndex !== undefined ? formIndex : Math.floor(Math.random() * forms.length));
+    this.formIndex = (formIndex !== undefined ? formIndex : Rss.Random.index(forms));
     
     this.form = forms[this.formIndex];
 
-    this.variationIndex = (variationIndex !== undefined ? variationIndex : Math.floor(Math.random() * this.form.length));
+    this.variationIndex = (variationIndex !== undefined ? variationIndex : Rss.Random.index(this.form));
 
     this.variation = this.form[this.variationIndex];
     

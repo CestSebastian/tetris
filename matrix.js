@@ -1,3 +1,5 @@
+'use strict';
+
 function Matrix(width, height, grid) {
     this.width  = width;
     this.height = height;

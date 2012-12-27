@@ -1,3 +1,5 @@
+'use strict';
+
 var colorMap = {
     '0' : '#F90',
     '1' : '#9B4',
