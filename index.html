@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html>
+
     <head>
+        <meta charset='utf-8' />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+        <meta name="description" content="Tetris : Basic tetris game." />
+
         <title>Tetris</title>
-        <script type="text/javascript" src="rss.js"></script>
-        <script type="text/javascript" src="colorMap.js"></script>
-        <script type="text/javascript" src="form.js"></script>
-        <script type="text/javascript" src="matrix.js"></script>
-        <script type="text/javascript" src="tetris.js"></script>
-        <script type="text/javascript" src="main.js" defer="defer"></script>
+        
+        <script type="text/javascript" src="js/Rss.js"></script>
+        <script type="text/javascript" src="js/Rss.Canvas.js"></script>
+        <script type="text/javascript" src="js/Rss.Grid.js"></script>
+        <script type="text/javascript" src="js/Rss.Random.js"></script>
+        <script type="text/javascript" src="js/colorMap.js"></script>
+        <script type="text/javascript" src="js/form.js"></script>
+        <script type="text/javascript" src="js/matrix.js"></script>
+        <script type="text/javascript" src="js/tetris.js"></script>
+        <script type="text/javascript" src="js/main.js" defer="defer"></script>
+
         <style>
             .fleft { float: left; }
             #game { margin: 10px;border: 1px solid #ccc; }
             #game canvas { float: left; }
-            
-            
+
+
             #score, #nextPiece { display: none; }
             #score > p { font-size: 20px; font-family: sans-serif; text-align: center; width: 150px; }
         </style>
     </head>
+
     <body>
+        <a id="forkme_banner" href="https://github.com/ereses7/tetris">View on GitHub</a>
+        <p>Sebastian Rus (<a href="https://github.com/ereses7" class="user-mention">@ereses7</a>)</p>
         <div id="controls">
             <button id="start">New Game</button>
             <button id="pause" disabled="disabled">Pause (Space)</button>
         </div>
-        
+
         <div class="fleft">
             <div id="game" class="fleft"></div>
         </div>
-        
+
         <div class="fleft">
             <div id="score">
                 <h3>Score</h3>
