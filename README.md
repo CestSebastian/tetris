@@ -1,4 +1,4 @@
 tetris
 ======
 
-Basic tetris game. Play here: http://CestSebastian.github.com/tetris/
+Basic tetris game. Play here: https://www.sebastianrus.com/tetris/
